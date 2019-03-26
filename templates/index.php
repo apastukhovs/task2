@@ -1,0 +1,6 @@
+<?php 
+$obj=new Calculator();
+
+
+
+?>
