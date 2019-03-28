@@ -10,12 +10,12 @@ $calculator->setSecondNum(22);
 $a = $calculator->getFirstNum();
 $b = $calculator->getSecondNum();
 
-$sum = $calculator->getSum($a, $b);
-$min = $calculator->getMin($a, $b);
-$square = $calculator->getSquare($a);
-$divide = $calculator->getDiv($a, $b);
-$multiple = $calculator->getMultiple($a, $b);
-$percent = $calculator->getPercent($a, $b);
+$sum = $calculator->getSum();
+$min = $calculator->getMin();
+$square = $calculator->getSquare();
+$divide = $calculator->getDiv();
+$multiple = $calculator->getMultiple();
+$percent = $calculator->getPercent();
 $calculator->setMemory($multiple);
 $memory = $calculator->getMemory();
 
