@@ -4,21 +4,20 @@ include 'Calculator.php';
 
 $calculator = new Calculator();
 
-$calculator->setFirstNum(39);
-$calculator->setSecondNum(22);
+$calculator->setFirstNum(9);
+$calculator->setSecondNum(4);
 
 $a = $calculator->getFirstNum();
 $b = $calculator->getSecondNum();
 
-$sum = $calculator->getSum($a, $b);
-$min = $calculator->getMin($a, $b);
-$square = $calculator->getSquare($a);
-$divide = $calculator->getDiv($a, $b);
-$multiple = $calculator->getMultiple($a, $b);
-$percent = $calculator->getPercent($a, $b);
+$sum = $calculator->getSum();
+$min = $calculator->getMin();
+$square = $calculator->getSquare();
+$divide = $calculator->getDiv();
+$multiple = $calculator->getMultiple();
+$percent = $calculator->getPercent();
 $calculator->setMemory($multiple);
 $memory = $calculator->getMemory();
-
 
 $calculator->setFirstNum($memory);
 $c = $calculator->getFirstNum();

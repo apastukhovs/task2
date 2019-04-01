@@ -5,6 +5,11 @@ class Calculator {
     private $b;
     private $memory;
 
+    public function __construct(){
+        $this->a = null;
+        $this->b = null;
+    }
+
     public function setFirstNum($a) {
         $this->a = (int)$a;
     }
@@ -29,33 +34,33 @@ class Calculator {
         return $this->memory;
     }
 
-    public function getSum($a, $b) {
-        return $a + $b;
+    public function getSum() {
+        return $this->a + $this->b;
     }
 
-    public function getMin($a, $b) {
-        return $a - $b;
+    public function getMin() {
+        return $this->a - $this->b;
     }
 
-    public function getSquare($a) {
-        return sqrt($a);
+    public function getSquare() {
+        return sqrt($this->a);
     }
 
-    public function getDiv($a, $b) {
-        if ($b != 0) {
-            return $a / $b;
+    public function getDiv() {
+        if ($this->b != 0) {
+            return $this->a / $this->b;
         }
         else {
             return ERROR;
         }
     }
 
-    public function getMultiple($a, $b) {
-        return $a * $b;
+    public function getMultiple() {
+        return $this->a * $this->b;
     }
 
-    public function getPercent($a, $b) {
-      return ($a / 100) * $b;
+    public function getPercent() {
+      return ($this->a / 100) * $this->b;
   }
 
 }

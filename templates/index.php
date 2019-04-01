@@ -1,6 +1,3 @@
-<?php 
-
-?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,7 +28,7 @@
          <?php echo "Percents: " . $a . ' % ' . $b . ' = ' . $percent; ?>
       </p>
       <p>
-         <?php echo 'Memory: ( ' . $a . ' + ' . $b.' )' . ' * ' . $d.' = ' . $result; ?>
+         <?php echo 'MR: ( ' . $a . ' + ' . $b.' )' . ' * ' . $d.' = ' . $result; ?>
       </p>
     </div>
   </div>
